@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Cadastro de filmes</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/post.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>Cadastro de filmes</h1>
+            <p>Preencha os dados abaixo!!!</p>
+        </header>
+        <main>
+            <section>
+                <h2>Filmes</h2>
+
+                <form id="form-filme">
+                    <label for="title">Nome do filme:</label>
+                    <input id="title" name="title" type="text" minlength="3" maxlength="120" required />
+
+                    <label for="genero">Genero: </label>
+                    <input id="genero" name="genero" type="text" required />
+
+                    <label for="ano">Ano: </label>
+                    <input id="ano" name="ano" type="text" required />
+
+                    <label for="diretor">Diretor: </label>
+                    <input id="diretor" name="diretor" type="text" required />
+
+                    <label for="nota">Nota: </label>
+                    <input id="nota" name="nota" type="text" required />
+
+                    <label for="imageUrl">Url da imagem (opcional):</label>
+                    <input id="imageUrl" name="imageUrl" type="url" />
+
+                    <button type="submit">Cadastrar filmes</button>
+                </form>
+                    <p id="resposta"></p>
+            </section>
+        </main>
+        <footer id="footer">
+            <p>Prática de formulários HTML.</p>
+        </footer>
+    </body>
+</html>
